@@ -1,0 +1,71 @@
+
+public class TestShirt {
+	   public static void main(String[] args) {
+			 
+		     Shirt sh1 = new Shirt();
+		     System.out.println("collarsize is "+sh1.getcollarsize());
+		     System.out.println("Sleve Length is "+sh1.getslevelength());
+		     System.out.println("Shirt Material is "+sh1.shirtmaterial());
+		     Shirt sh2 = new Shirt(40,60);
+		     sh2.setcollarsize(40);
+		     sh2.slevelength(60);
+		     System.out.println("collarsize is "+sh2.getcollarsize());
+		     System.out.println("Sleve Length is "+sh2.getslevelength());
+		     System.out.println("Shirt Material is "+sh2.shirtmaterial());
+		     Shirt sh3 = new Shirt(30,90);
+		     sh3.setcollarsize(30);
+		     sh3.slevelength(90);
+		     System.out.println("collarsize is "+sh3.getcollarsize());
+		     System.out.println("Sleve Length is "+sh3.getslevelength());
+		     System.out.println("Shirt Material is "+sh3.shirtmaterial());	
+		   }
+}
+class Shirt
+{
+	private int collarsize, slevelength;
+	private String shirtmaterial;	
+	//Constructor method
+	   public Shirt(int collarsize, int slevelength)
+	   {
+	     this.collarsize = collarsize;
+	     this.slevelength = slevelength;
+	     this.shirtmaterial = "Cotton";
+	   }
+
+	public Shirt()
+	   {
+	     this.collarsize = 10;
+	     this.slevelength = 50;
+	     this.shirtmaterial = "Cotton";
+	   }
+	 //Accessor for collarsize
+	   public int getcollarsize()
+	   {
+	     return collarsize;
+	   }	 
+	   //Accessor for slevelength
+	   public int getslevelength()
+	   {
+	     return slevelength;
+	   } 
+	   //Accessor for shirtmaterial
+	   public String shirtmaterial()
+	   {
+	     return shirtmaterial;
+	   }
+	 //Mutator for collarsize
+	   public void setcollarsize(int collarsize)
+	   {
+		   this.collarsize = collarsize;
+	   }	 
+	   //Mutator for slevelength
+	   public void slevelength(int slevelength)
+	   {
+	     this.slevelength = slevelength;
+	   }
+	   //Mutator for shirtmaterial
+	   public void setshirtmaterial(String shirtmaterial)
+	   {
+	     this.shirtmaterial = shirtmaterial;
+	   }
+}
